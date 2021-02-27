@@ -7,11 +7,3 @@
   <link rel="stylesheet" href="{{ "/main.css" }}">
   {%- feed_meta -%}
 </head>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #0d0d0d !important;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      {{site.title}}
-    </a>
-  </div>
-</nav>

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #0d0d0d !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-size: 3.4em !important;">
+        <img src="/assets/navIcon.png" width="50" height="50" class="img-fluid"/>
+        {{site.title}}
+      </a>
+
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav ms-auto">
+            <!-- Iterate through the pages. If it has a title, put it on the navbar. -->
+            {% for item in site.pages %}
+                {% if item.title != null %}
+                <a class="nav-item nav-link" href="{{item.url}}">{{ item.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+      </div>
+
+      
+    </div>
+  </nav>

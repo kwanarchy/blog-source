@@ -1,5 +1,47 @@
 @import "/assets/bootstrap/css/bootstrap.css";
 
-h1{
-    color: red;
+@font-face {
+    font-family: BebasNue;
+    src: url("/assets/fonts/Bebas.ttf");
+}
+
+:root {
+    --white: #f4f4f4;
+}
+
+.navbar {
+    font-family: BebasNue;
+    color: var(--white) !important;
+    margin-bottom: 2em;
+}
+
+.nav-item{
+    color: var(--white) !important;
+    font-size: 3.4em;
+    padding-left: 0.5em !important;
+}
+
+.nav-item:hover{
+    color: var(--white) !important;
+    font-size: 3.4em;
+    padding-left: 0.5em !important;
+    text-decoration: underline;
+}
+
+h1,h3{
+    font-family: BebasNue;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--white);
 }
