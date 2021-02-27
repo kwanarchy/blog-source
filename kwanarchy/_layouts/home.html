@@ -6,9 +6,10 @@ layout: default
 <hr/>
 
 <!--Scripts n shit for the posts-->
+{%- assign date_format = "%b %-d, %Y" -%}
 {% for post in site.posts %}
     <h3><a href="{{post.url}}">{{post.title}}</a></h3>
-    <p>{{post.date | slice: 0,11}}</p>
+    <p>{{post.date | date: date_format}}</p>
     <p class="excerpt">{{post.excerpt}}</p>
     <br/><br/>
 {% endfor %}

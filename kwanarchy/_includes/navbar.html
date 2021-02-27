@@ -5,12 +5,18 @@
         {{site.title}}
       </a>
 
-      <div class="collapse navbar-collapse">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav ms-auto">
             <!-- Iterate through the pages. If it has a title, put it on the navbar. -->
             {% for item in site.pages %}
                 {% if item.title != null %}
-                <a class="nav-item nav-link" href="{{item.url}}">{{ item.title }}</a>
+                <div>
+                  <a class="nav-item nav-link" href="{{item.url}}">{{ item.title }}</a>
+                </div>
                 {% endif %}
             {% endfor %}
         </div>
