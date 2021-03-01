@@ -7,12 +7,19 @@
 
 :root {
     --white: #f4f4f4;
+    --red: #cc0000;
 }
 
 .navbar {
     font-family: BebasNue;
     color: var(--white) !important;
     margin-bottom: 2em;
+}
+
+.post-date {
+    margin-top: -0.8em;
+    margin-bottom: -0.5em;
+    font-style: italic;
 }
 
 .nav-item{
@@ -33,15 +40,22 @@ h1,h3{
 }
 
 a {
-    color: #cc0000;
+    color: var(--red);
     text-decoration: none;
 }
 
 a:hover {
-    color: #cc0000;
+    color: var(--red);
     text-decoration: underline;
 }
 
 body {
     background-color: var(--white);
 }
+
+/*
+::selection {
+    background: var(--red);
+    color: var(--white);
+}
+*/
