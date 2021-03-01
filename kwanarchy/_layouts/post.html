@@ -8,9 +8,8 @@ permalink: /:year/:month/:title/
 <p><i>{{page.date | date: date_format}}</i></p>
 <p><i>Tags: 
 
-{% for tag in page.tags %}
-    {{tag}}
-{% endfor %}
+{{page.tags | join: ", "}}
+
 </i></p>
 
 <hr/>
