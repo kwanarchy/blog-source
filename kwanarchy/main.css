@@ -16,6 +16,11 @@
     margin-bottom: 2em;
 }
 
+.read-more {
+    font-family: BebasNue;
+    font-size: 1.2em;
+}
+
 .post-date {
     margin-top: -0.8em;
     margin-bottom: -0.5em;

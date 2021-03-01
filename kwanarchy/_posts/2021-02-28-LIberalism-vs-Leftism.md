@@ -1,5 +1,10 @@
 ---
 layout: post
+tags:
+    - Liberalism
+    - Educative
+    - Biden
+    - U.S.
 ---
 
 You might have thought that liberalism and leftism were synonymous, but that isn't true at all. Who can blame you? We were all like that at some point.
