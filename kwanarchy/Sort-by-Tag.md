@@ -4,11 +4,13 @@ permalink: sort-by-tag
 layout: page
 ---
 
-{% for tag in site.tags %}
+<!-- Sort tags alphabetically and iterate through them -->
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<h2>{{ t | downcase }}</h2>
+<h2 id="{{t | downcase}}">{{ t | downcase }}</h2>
 <ul>
 {% for post in posts %}
     {% if post.tags contains t %}

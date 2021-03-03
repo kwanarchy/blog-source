@@ -8,7 +8,17 @@ permalink: /:year/:month/:title/
 <p><i>{{page.date | date: date_format}}</i></p>
 <p><i>Tags: 
 
-{{page.tags | join: ", "}}
+{% for tag in page.tags %}
+    <span>
+        {% assign last_tag = page.tags | last%}
+        {% if tag == last_tag %}
+            <a href="/sort-by-tag#{{tag | downcase}}">{{tag}}</a>
+        {% else %}
+            <a href="/sort-by-tag#{{tag | downcase}}">{{tag}}</a>,
+        {% endif%}
+    </span>
+{% endfor %}
+
 
 </i></p>
 
